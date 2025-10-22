@@ -187,7 +187,7 @@ if df is None:
 # Conditional rendering based on view selection
 if view_selection == "🗺️ Variable View":
     # VARIABLE VIEW - Original dashboard.py content
-    st.info("📊 **Healthcare Accessibility Analysis**: Select a healthcare accessibility variable to explore national patterns, state-wise distribution maps, and rural-urban comparisons across India.")
+    st.info("📊 **Healthcare Accessibility Analysis**: Select a variable to explore national patterns, state-wise distribution maps, and rural-urban comparisons across India. ")
     
     st.markdown("---")
     
@@ -199,8 +199,8 @@ if view_selection == "🗺️ Variable View":
     with filter_col1:
         # Variable selection
         variable_options = {
-            "HAC-M": "hac_m",
-            "HAC-W": "hac_w"
+            "Healthcare Access Coverage via motorized transport (HAC-M)": "hac_m",
+            "Healthcare Access Coverage via walking (HAC-W)": "hac_w"
         }
 
         selected_variable = st.selectbox(
